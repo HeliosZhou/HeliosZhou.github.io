@@ -6,30 +6,31 @@
   gap: 2rem;
   margin-top: 2rem;
   padding: 2rem 0;
+  font-weight: bold;
 }
 
 .music-card {
   flex-shrink: 0;
   flex-grow: 0;
   position: relative;
-  width: 360px;
-  height: 360px;
+  width: 320px;
+  height: 320px;
   overflow: hidden;
   margin: 10px;
-  background: linear-gradient(135deg, rgba(55, 65, 81, 0.9), rgba(75, 85, 99, 0.9));
+  background: linear-gradient(135deg, rgba(252, 253, 254, 0.98), rgba(248, 250, 252, 0.99));
   border-radius: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  color: #e8f6fd;
-  transition: all 0.3s ease;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  color: #0f172a;
+  transition: all 0.5s ease;
 }
 
 .music-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
 .music-photo {
@@ -64,8 +65,8 @@
 }
 
 .music-card:hover .music-photo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   top: 15px;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -75,32 +76,32 @@
 
 .music-title {
   position: absolute;
-  top: 360px;
+  top: 240px;
   transition: 0.5s;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  color: #e8f6fd;
+  color: #0f172a;
   padding: 0 1rem;
   z-index: 2;
 }
 
 .music-card:hover .music-title {
   position: absolute;
-  top: 160px;
+  top: 120px;
   font-size: 1.3rem;
 }
 
 .music-artist {
   opacity: 0;
-  margin-top: 200px;
+  margin-top: 180px;
   width: 80%;
   font-weight: normal;
   text-align: center;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(156, 163, 175, 0.4);
-  color: #d1d5db;
+  color: #e2e8f0;
   font-size: 1.1rem;
   transition: opacity 0.5s ease;
 }
@@ -114,9 +115,8 @@
   width: 90%;
   text-align: center;
   font-size: 0.95rem;
-  margin-bottom: 8px;
-  line-height: 1.6;
-  color: #9ca3af;
+  margin-bottom: 4px;
+  color: #cbd5e1;
   padding: 0 1rem;
   transition: opacity 0.5s ease;
 }
@@ -130,8 +130,8 @@
   width: 90%;
   text-align: center;
   font-size: 0.85rem;
-  margin-bottom: 15px;
-  color: #6b7280;
+  margin-bottom: 4px;
+  color: #94a3b8;
   padding: 0 1rem;
   transition: opacity 0.5s ease;
 }
@@ -144,7 +144,7 @@
   opacity: 0;
   color: #e8f6fd;
   text-decoration: none;
-  padding: 12px 24px;
+  padding: 6px 6px;
   border: 1px solid rgba(156, 163, 175, 0.5);
   border-radius: 25px;
   font-size: 0.9rem;
@@ -168,7 +168,7 @@
 
 /* 深色主题优化 */
 [data-theme="dark"] .music-card {
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(51, 65, 85, 0.9));
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
   border-color: rgba(156, 163, 175, 0.2);
 }
 
@@ -178,20 +178,24 @@
 }
 
 [data-theme="dark"] .music-title {
-  color: #f1f5f9;
+  color: #f8fafc;
 }
 
 [data-theme="dark"] .music-artist {
-  color: #e2e8f0;
+  color: #64748b;
   border-bottom-color: rgba(148, 163, 184, 0.3);
 }
 
 [data-theme="dark"] .music-album {
-  color: #cbd5e0;
+  color: #475569;
+}
+
+[data-theme="dark"] .music-date {
+  color: #334155;
 }
 
 [data-theme="dark"] .music-link {
-  color: #f1f5f9;
+  color: #cbd5e1;
   border-color: rgba(148, 163, 184, 0.4);
   background: rgba(255, 255, 255, 0.05);
 }
